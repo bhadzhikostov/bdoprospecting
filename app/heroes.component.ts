@@ -1,6 +1,8 @@
 import { Component, OnInit } from 'angular2/core';
 import { Router } from 'angular2/router';
 
+import { MdButton } from '@angular2-material/button';
+
 import { Hero } from './hero';
 import { HeroDetailComponent } from './hero-details.component';
 import { HeroService } from './hero.service';
@@ -9,7 +11,7 @@ import { HeroService } from './hero.service';
     selector: 'my-heroes',
     templateUrl: 'app/heroes.component.html',
     styleUrls: ['app/heroes.component.css'],
-    directives: [HeroDetailComponent]
+    directives: [MdButton, HeroDetailComponent]
 })
 
 
